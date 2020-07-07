@@ -1,0 +1,38 @@
+<h1>kullanicilarListesi</h1>
+
+
+<div class="container">
+
+<table class="table table-hover">
+
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>isim</th>
+            <th>soyisim</th>
+            <th>email</th>
+            <th>kullaniciadi</th>
+            <th>işlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <%for(var i=0;i<kullanicilar.length;i++){%>
+
+        <%if(i%2==0){%>
+        <tr class="info">
+        <%}else{%>
+        <tr class="warning">
+        <%}%>
+            <th><%=i+1%></th>
+            <th><%=kullanicilar[i].ad%></th>
+            <th><%=kullanicilar[i].soyisim%></th>
+            <th><%=kullanicilar[i].email%></th>
+            <th><%=kullanicilar[i].kullaniciadi%></th>       
+            <th><a href="/login/kullanicisil/<%=kullanicilar[i].kullaniciadi%>">sil</a></th>
+
+        </tr>
+        <%}%>
+    </tbody>
+</table>
+</div>
