@@ -13,7 +13,7 @@
         "express-ejs-layouts": "^2.5.0",
         "express-jwt": "^6.0.0",
         "jsonwebtoken": "^8.5.1",
-        "mongoose": "^5.9.7",
+        "mongoose": "^5.13.15",
         "pstree.remy": "^1.1.7"
     },
     "devDependencies": {
